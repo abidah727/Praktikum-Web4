@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat Box</title>
+    <script>
+        function save() {
+            let pesan = document.forms['form']['chat'].value;
+            let tabel = document.getElementById("hasiltabel");
+            let baris = tabel.insertRow(1);
+            let kol1 = baris.insertCell(0);
+            kol1.innerHTML = pesan;
+        }
+    </script>
+</head>
+
+
+
+<body>
+
+    <div class="container" style=" border: 1px solid; width: 280px; height: 300px; ">
+        <table id="hasiltabel">
+            <tr>
+                <td scope="col"></td>
+            </tr>
+
+            <form name="form">
+                <div style="margin-left: 5px; margin-top: 272px; position:fixed;">
+                    <input id="chat" type="text" size="22" placeholder="Masukan Pesan Anda disini!"></input>
+                    <button onclick="save()" type="button">Kirim Pesan</button>
+                </div>
+
+            </form>
+        </table>
+    </div>
+
+</body>
+
+</html>

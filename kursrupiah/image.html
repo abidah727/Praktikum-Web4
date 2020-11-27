@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>	
+        <title>IMAGE PICKER</title></head>
+        <body style="margin:auto"> 
+        <center>
+            <select onchange="gantigambar();" id="listgambar">			
+                <option value="https://img2.pngdownload.id/20180511/cgq/kisspng-northern-giraffe-neck-zoo-animal-5af59608ebc649.3879355315260441689658.jpg">Jerapah</option>					
+                <option value="https://e7.pngegg.com/pngimages/447/140/png-clipart-elephant-elephant-animal.png">Gajah</option>			
+                <option value="https://e7.pngegg.com/pngimages/47/791/png-clipart-wild-brown-bear-wild-animal.png">Beruang Coklat</option>			
+                <option value="https://e7.pngegg.com/pngimages/17/585/png-clipart-white-tailed-deer-transparency-deer.png">Rusa</option>
+                <option value="https://e7.pngegg.com/pngimages/821/153/png-clipart-bird-peafowl-graphy-illustration-bird-animals-peafowl.png">Merak</option>
+                <option value="https://img2.pngdownload.id/20190210/tvi/kisspng-crocodile-reptile-animal-giant-african-snail-allig-5c5fd684ab46a7.6900960515497847087016.jpg">Buaya</option>
+                <option value="https://w7.pngwing.com/pngs/862/126/png-transparent-snake-crawl-animal-snakes.png">Ular</option>
+                <option value="https://www.pngkit.com/png/full/41-418385_komodo-dragon-free-download-png-komodo-png.png">Komodo</option>
+                <option value="https://img.favpng.com/10/17/23/chimpanzee-gorilla-orangutan-png-favpng-2zsUN6hdbMzuu3exbR5fBNuU0.jpg">Orangutan</option>
+                <option value="https://s.kaskus.id/r540x540/images/2018/08/04/10285813_20180804031659.jpg">Badak bercula satu</option>
+                <option value="https://www.jenisfaunaindonesia.web.id/wp-content/uploads/2018/08/Untitled-153.jpg">Kuskus</option>
+                <option value="https://e7.pngegg.com/pngimages/386/627/png-clipart-tiger-tiger.png">Harimau</option>
+                <option value="https://e7.pngegg.com/pngimages/1019/708/png-clipart-lion-lion.png">Singa</option>
+                <option value="https://www.vhv.rs/dpng/d/281-2817799_iguana-iguana-png-transparent-png.png">Iguana</option>
+                <option value="https://w7.pngwing.com/pngs/93/178/png-transparent-a-kangaroo-kangaroo-mammal-australia-thumbnail.png">Kanguru</option>
+
+
+            </select>
+        </center>	
+            <br/>	
+            <img src="https://sgp1.digitaloceanspaces.com/radarbogor/2018/06/20180621-radarbogor-metrpolis-kebun-binatang-mini.jpg" style="width: 60%" id="gambar">
+         </body>
+         </body>
+         <script type="text/javascript">	
+         function gantigambar()
+          {		
+              let gambar = document.getElementById("listgambar").value;		
+              document.getElementById("gambar").src = gambar;		
+              alert("Ini Gambar " + gambar);	  
+            }
+        </script>
+</html>
